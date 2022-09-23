@@ -1,48 +1,48 @@
-state,Alabama,n_incident
-Pennsylvania,Alaska,1349
-California,Arizona,2328
-Ohio,Arkansas,2842
-Colorado,California,16306
-North Carolina,Colorado,3201
-Oklahoma,Connecticut,3067
-New Mexico,Delaware,1685
-Louisiana,District of Columbia,3195
-California,Florida,15029
-Maryland,Georgia,8925
-Tennessee,Hawaii,289
-Missouri,Idaho,661
-Louisiana,Illinois,17556
-District of Columbia,Indiana,5852
-Ohio,Iowa,2517
-Tennessee,Kansas,2145
-California,Kentucky,4157
-Illinois,Louisiana,8103
-Louisiana,Maine,907
-California,Maryland,5798
-Delaware,Massachusetts,5981
-Utah,Michigan,6136
-California,Minnesota,2408
-Oklahoma,Mississippi,3599
-Michigan,Missouri,6631
-California,Montana,638
-Georgia,Nebraska,1651
-Louisiana,Nevada,1952
-Georgia,New Hampshire,964
-Michigan,New Jersey,5387
-California,New Mexico,1645
-Indiana,New York,9712
-Mississippi,North Carolina,8739
-Missouri,North Dakota,573
-District of Columbia,Ohio,10244
-California,Oklahoma,3455
-New York,Oregon,2286
+state,unique_state,n_incident
+Pennsylvania,Alabama,5471
+California,Alaska,1349
+Ohio,Arizona,2328
+Colorado,Arkansas,2842
+North Carolina,California,16306
+Oklahoma,Colorado,3201
+New Mexico,Connecticut,3067
+Louisiana,Delaware,1685
+California,District of Columbia,3195
+Maryland,Florida,15029
+Tennessee,Georgia,8925
+Missouri,Hawaii,289
+Louisiana,Idaho,661
+District of Columbia,Illinois,17556
+Ohio,Indiana,5852
+Tennessee,Iowa,2517
+California,Kansas,2145
+Illinois,Kentucky,4157
+Louisiana,Louisiana,8103
+California,Maine,907
+Delaware,Maryland,5798
+Utah,Massachusetts,5981
+California,Michigan,6136
+Oklahoma,Minnesota,2408
+Michigan,Mississippi,3599
+California,Missouri,6631
+Georgia,Montana,638
+Louisiana,Nebraska,1651
+Georgia,Nevada,1952
+Michigan,New Hampshire,964
+California,New Jersey,5387
+Indiana,New Mexico,1645
+Mississippi,New York,9712
+Missouri,North Carolina,8739
+District of Columbia,North Dakota,573
+California,Ohio,10244
+New York,Oklahoma,3455
+California,Oregon,2286
 California,Pennsylvania,8929
 California,Rhode Island,895
-California,South Carolina,6939
-Florida,South Dakota,544
-Illinois,Tennessee,7626
-Missouri,Texas,13577
-New York,unique_state,0
+Florida,South Carolina,6939
+Illinois,South Dakota,544
+Missouri,Tennessee,7626
+New York,Texas,13577
 California,Utah,1072
 Washington,Vermont,472
 South Carolina,Virginia,5949
