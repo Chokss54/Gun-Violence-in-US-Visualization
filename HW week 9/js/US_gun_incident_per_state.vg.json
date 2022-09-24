@@ -13,7 +13,7 @@
         "lookup": "properties.name",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/HW%20week%209/data/gun-violence-data.csv",
+            "url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/HW%20week%209/data/total%20gun%20incidents%20updated.csv",
             "format": {"type": "csv"}
           },
           "key": "unique_state",
