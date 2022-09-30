@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/data/total%20gun%20incidents%20updated.csv"
+    },
+    "repeat": {"layer": ["n_incident", "n_injured", "n_killed"]},
+    "spec": {
+      "mark": "bar", 
+      "encoding": {
+        "x": {
+          "field": "unique_state",
+          "type": "nominal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": {"repeat": "layer"},
+          "type": "quantitative",
+          "title": null
+        },
+        "tooltip": [
+          {"field": "n_incident", "type": "quantitative", "title": "no incident"},
+          {"field": "n_injured", "type": "quantitative", "title": "no injuries"},
+          {"field": "n_killed", "type": "quantitative", "title": "no deaths"}
+        ],
+        "color": {"datum": {"repeat": "layer"}},
+        "xOffset": {"datum": {"repeat": "layer"}}
+      }
+    }
+  }
