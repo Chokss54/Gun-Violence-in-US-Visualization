@@ -1,13 +1,19 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Total Gun Violence Count by Date in USA 2017",
-    "data": {"url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/data/gun-violence-data_clean.csv",
+    "data": {"url": "https://raw.githubusercontent.com/Chokss54/Week-10-HW/main/month_data_clean.csv",
     "format": {"parse": {"date": "utc:'%e/%m/%Y'"}}},
     "width": 1500,
     "height": 300,
     "encoding": {"x": {"field": "date", "type": "temporal", "title":"Date"}, "color": {"field": "tragedy type", "type": "nominal", "legend": null}},
+    "params": [{
+      "name": "tragedy_type_selection",
+      "bind": {"input": "select", "options": [null, "total incident", "total injured", "total death"], "labels":["Show All", "Total incidents", "Total Injured", "Total Deaths"], "name": "Tragedy Type Selection:    "}
+    }],
     "layer": [
       {
+        "transform": [{
+          "filter": "tragedy_type_selection == null || datum.tragedy type == tragedy_type_selection"}],
         "encoding": {
           "color": {"field": "tragedy type", "type": "nominal"},
           "y": {"field": "count", "type": "quantitative", "title": "Total Count"}
