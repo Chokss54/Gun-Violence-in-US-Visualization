@@ -1,0 +1,10 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/data/month_data_clean.csv"},
+    "transform": [{"filter": "datum.symbol==='GOOG'"}],
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal"},
+      "y": {"field": "price", "type": "quantitative"}
+    }
+  }

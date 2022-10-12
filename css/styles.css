@@ -1,7 +1,16 @@
 #US_incident_map {
 	top:100px;
 	bottom: 100px; 
-	left: 100px;
+	left: 420px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#US_month_incident_map {
+	top:200px;
+	bottom: 100px; 
+	left: 150px;
 	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/

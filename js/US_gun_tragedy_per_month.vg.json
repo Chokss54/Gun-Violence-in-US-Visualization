@@ -1,0 +1,83 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Total Gun Violence Count by Date in USA 2017",
+    "data": {"url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/data/gun-violence-data_clean.csv",
+    "format": {"parse": {"date": "utc:'%e/%m/%Y'"}}},
+    "width": 1500,
+    "height": 300,
+    "encoding": {"x": {"field": "date", "type": "temporal", "title":"Date"}, "color": {"field": "tragedy type", "type": "nominal", "legend": null}},
+    "layer": [
+      {
+        "encoding": {
+          "color": {"field": "tragedy type", "type": "nominal"},
+          "y": {"field": "count", "type": "quantitative", "title": "Total Count"}
+        },
+        "layer": [
+          {"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+        ]
+      },
+      {
+        "encoding": {
+          "y": {"field": "count", "type": "quantitative", "title": "Total Count"}
+        },
+        "layer": [
+          {"mark": "text"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "text"}
+        ]
+      },
+      {
+        "transform": [{"pivot": "tragedy type", "value": "count", "groupby": ["date"]}],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"timeUnit": "yearmonthdate", "field": "date", "type": "temporal", "title": "Date"},
+            {"field": "total incident", "type": "quantitative"},
+            {"field": "total injured", "type": "quantitative"},
+            {"field": "total death", "type": "quantitative"}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+      },
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "date", "type": "temporal"},
+          "y": {
+            "aggregate": {"argmax": "date"},
+            "field": "count",
+            "type": "quantitative"
+          }
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 10},
+            "encoding": {"text": {"field": "tragedy type", "type": "nominal"}}
+          }
+        ]
+      },
+      {
+        "encoding": {
+          "x": {"aggregate": "min", "field": "date", "type": "temporal"}
+        },
+        "layer": [
+          {
+            "mark": {"type": "text", "align": "left", "dx": 8, "dy": -140, "text":"Highest gun violence incident count due to many people drinking during new year", "fill":"indianred", "fontSize": 12}
+          }
+        ]
+      }
+    ]
+  }
