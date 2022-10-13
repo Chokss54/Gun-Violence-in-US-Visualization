@@ -1,17 +1,103 @@
+.header {
+	font-size: 60px;
+	text-align: center;
+	background-color: azure;
+	padding: 20px;
+}
+
+.text_space1 {
+	position: relative;
+	padding-top: 30px;
+	float: right;
+	width: 30%;
+	font-size: 18px;
+	line-height: 30px;
+	padding-right: 150px;
+	text-align: justify;
+}
+
+.text_space2 {
+	position: relative;
+	padding-top: 15px;
+	float: right;
+	width: 30%;
+	font-size: 18px;
+	line-height: 30px;
+	padding-right: 150px;
+	text-align: justify;
+}
+
+.text_space3 {
+	position: relative;
+	float: left;
+	width: 30%;
+	font-size: 18px;
+	line-height: 30px;
+	padding-left: 180px;
+	text-align: justify;
+	top: 165px;
+}
+
+.focus_box {
+	position: relative;
+	float: right;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	background-color: lightgrey;
+  	width: 400px;
+  	border: 6px solid darkslateblue;
+	padding: 20px;
+	margin-right: 155px;
+	font-weight: bold;
+	color: red;
+}
+
 #US_incident_map {
-	top:100px;
-	bottom: 100px; 
-	left: 420px;
-	right: 100px;
+	position:relative;
+	top:50px;
+	float: left;
+	/* bottom: 100px;  */
+	left: 130px;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
-#US_month_incident_map {
-	top:200px;
+#US_month_incident{
+	position: relative;
+	top:80px;
 	bottom: 100px; 
-	left: 150px;
-	right: 100px;
+	margin-left: 130px;
 	/*height: 1000px;
 	width: 800px;*/
+}
+
+#US_month_incident_normalized{
+	position: relative;
+	float: right;
+	top:150px;
+	bottom: 100px; 
+	margin-right: 150px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+.lines1{
+	position:absolute;
+	width:220pX;
+	left: 800px;
+	top: 1000px;
+	/* text-align:right; */
+	/* margin-right: 6005px; */
+	bottom: 665px;
+	/* margin-bottom: 100; */
+}
+
+.lines2{
+	position:relative;
+	width:300pX;
+	text-align:right;
+	margin-right: 605px;
+	bottom: 615px;
+	/* margin-bottom: 100; */
 }

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Injury-Death Rate of Gun Violence per Month in USA 2017",  "fontSize": 16, "offset":30},
+  "width": 500,
+  "height":200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/month_data_clean.csv",
+    "format": {"parse": {"date": "utc:'%e/%m/%Y'"}}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "timeUnit": "yearmonth", "title": "Date"},
+    "y": {"field": "KDI month", "aggregate": "average", "title":"Injury-Death Rate"}
+  }
+}
