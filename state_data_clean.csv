@@ -1,4 +1,4 @@
-state,total incident,total killed,total injured,KDI state
+state,total incident,total death,total injured,KDI state
 Pennsylvania,2172,635,1188,0.84
 California,4588,1423,1953,0.74
 Ohio,2701,700,1517,0.82
