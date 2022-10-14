@@ -1,7 +1,7 @@
 .header {
 	font-size: 60px;
 	text-align: center;
-	background-color: azure;
+	background-color: #f2f2f2;
 	padding: 20px;
 }
 
@@ -12,18 +12,16 @@
 	width: 30%;
 	font-size: 18px;
 	line-height: 30px;
-	padding-right: 150px;
+	padding-right: 10%;
 	text-align: justify;
 }
 
 .text_space2 {
 	position: relative;
-	padding-top: 15px;
 	float: right;
-	width: 30%;
 	font-size: 18px;
 	line-height: 30px;
-	padding-right: 150px;
+	padding-right: 0%;
 	text-align: justify;
 }
 
@@ -33,9 +31,9 @@
 	width: 30%;
 	font-size: 18px;
 	line-height: 30px;
-	padding-left: 180px;
+	padding-left: 12%;
 	text-align: justify;
-	top: 165px;
+	top: 125px;
 }
 
 .focus_box {
@@ -48,7 +46,7 @@
   	width: 400px;
   	border: 6px solid darkslateblue;
 	padding: 20px;
-	margin-right: 155px;
+	margin-right: 0%;
 	font-weight: bold;
 	color: red;
 }
@@ -58,16 +56,18 @@
 	top:50px;
 	float: left;
 	/* bottom: 100px;  */
-	left: 130px;
+	left: 10%;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
 #US_month_incident{
+	float: left;
 	position: relative;
 	top:80px;
 	bottom: 100px; 
-	margin-left: 130px;
+	left: 10%;
+	
 	/*height: 1000px;
 	width: 800px;*/
 }
@@ -76,28 +76,19 @@
 	position: relative;
 	float: right;
 	top:150px;
-	bottom: 100px; 
-	margin-right: 150px;
+	right: 10%;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
-.lines1{
-	position:absolute;
-	width:220pX;
-	left: 800px;
-	top: 1000px;
-	/* text-align:right; */
-	/* margin-right: 6005px; */
-	bottom: 665px;
-	/* margin-bottom: 100; */
+.subheader_month{
+	position: relative;
+	text-align: center;
+	top:0px;
+	bottom: 100px; 
 }
 
-.lines2{
-	position:relative;
-	width:300pX;
-	text-align:right;
-	margin-right: 605px;
-	bottom: 615px;
-	/* margin-bottom: 100; */
+.subheader_state{
+	position: relative;
+	text-align: center;
 }
