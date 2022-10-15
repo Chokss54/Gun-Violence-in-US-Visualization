@@ -62,6 +62,7 @@
 }
 
 #US_month_incident{
+	position: relative;
 	float: left;
 	position: relative;
 	top:80px;
