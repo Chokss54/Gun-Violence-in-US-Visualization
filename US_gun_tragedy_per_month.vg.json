@@ -3,7 +3,7 @@
     "title": {"text":"Total Gun Violence Count by Date in USA 2017", "fontSize": 18, "offset":40},
     "data": {"url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/month_data_clean.csv",
     "format": {"parse": {"date": "utc:'%e/%m/%Y'"}}},
-    "width": 1100,
+    "width": 1080,
     "height": 300,
     "encoding": {"x": {"field": "date", "type": "temporal", "title":"Date"}, "color": {"field": "tragedy_type", "type": "nominal", "legend": null}},
     "params": [{
@@ -15,7 +15,7 @@
         "transform": [{
           "filter": "tragedy_type_selection == null || datum.tragedy_type == tragedy_type_selection"}],
         "encoding": {
-          "color": {"field": "tragedy_type", "type": "nominal", "scale":{"domain":["total incident", "total injured", "total death"], "range":["#1f77b4", "#ff7f0e", "#d62728"]}},
+          "color": {"field": "tragedy_type", "type": "nominal", "scale":{"domain":["total incident", "total injured", "total death"], "range":["purple", "#ff7f0e", "#d62728"]}},
           "y": {"field": "count", "type": "quantitative", "title": "Total Count"}
           }, 
         "layer": [
@@ -93,7 +93,7 @@
         },
         "layer": [
           {
-            "mark": {"type": "text", "align": "left", "dx": 8, "dy": -140, "text":"Highest gun violence incident count due to many people drinking during new year", "fill":"#1f77b4", "fontSize": 12}
+            "mark": {"type": "text", "align": "left", "dx": 8, "dy": -140, "text":"Highest gun violence incident count due to many people drinking during new year", "fill":"purple", "fontSize": 12}
           }
         ]
       }

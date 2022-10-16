@@ -5,7 +5,7 @@
     {
       "title": {"text": "Danger scale of Gun Violence per State in USA 2017", "fontSize": 18, "offset":30, "subtitle": "Injury and Death count per Incident"},
       "width": 500,
-  "height": 400,
+  "height": 450,
   "projection": {"type": "albersUsa"},
   "data": {
     "url": "https://raw.githubusercontent.com/Chokss54/Gun-Violence-in-US-Visualization/main/US_map1.json",
@@ -64,6 +64,7 @@
 "spec": {
   "mark": "bar",
   "encoding": {
+    
     "y": {"field": "properties.name", "type": "nominal", "title":"State"},
     "x": {
       "aggregate": "sum",
@@ -77,7 +78,7 @@
       {"field": "total injured", "type": "quantitative", "title": "Total Injuries"},
       {"field": "total death", "type": "quantitative", "title": "Total Deaths"}
     ],
-    "color": {"datum": {"repeat": "layer"}, "title": "Tragedy Type"},
+    "color": {"datum": {"repeat": "layer"}, "title": "Tragedy Type", "scale":{"domain":["total incident", "total injured", "total death"], "range":["purple", "#ff7f0e", "#d62728"]}},
     "yOffset": {"datum": {"repeat": "layer"}}
   }
 }

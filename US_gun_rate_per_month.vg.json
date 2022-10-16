@@ -13,7 +13,7 @@
   "encoding": {
     "x": {"field": "date", "type": "temporal", "timeUnit": "yearmonth", "title": "Date"},
     "y": {"field": "KDI month", "aggregate": "average", "title":"Injury-Death Rate", "scale":{"zero":false}},
-    "color": {"value": "purple"}
+    "color": {"value": "#1f77b4"}
   }
     },
     {
