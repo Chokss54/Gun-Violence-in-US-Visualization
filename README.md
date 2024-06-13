@@ -13,3 +13,6 @@ This project provides an analysis of gun violence in the United States for the y
 1. **HTML/CSS/JavaScript**: For front-end development of the website.
 2. **Microsoft Excel**: For data pre-processing & cleaning.
 3. **Vega Lite**: For plotting graphs.
+
+## Website Dashboard
+https://chokss54.github.io/Gun-Violence-in-US-Visualization/
